@@ -20,6 +20,7 @@ const navbarsStyle = (theme) => ({
     overflow: "hidden",
     "& header": {
       borderRadius: "0",
+    color: "#34568B",
     },
   },
   navigation: {

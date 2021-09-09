@@ -17,6 +17,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
+import HiringSection from "./Sections/HiringSection.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import ReasonSection from "./Sections/ReasonSection.js";
@@ -59,9 +60,10 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
+          <HiringSection />
           <ProductSection />
           <TeamSection />
-          <ReasonSection/>
+          <ReasonSection />
         </div>
       </div>
       <Footer />

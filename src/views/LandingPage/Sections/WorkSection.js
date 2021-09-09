@@ -9,6 +9,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
+import Overlay from "components/Overlay/Overlay.js"
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
@@ -17,6 +18,7 @@ const useStyles = makeStyles(styles);
 export default function WorkSection() {
   const classes = useStyles();
   return (
+    <Overlay status={status} onClose={() => setStatus(false)}>
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
@@ -67,5 +69,6 @@ export default function WorkSection() {
         </GridItem>
       </GridContainer>
     </div>
+    </Overlay>
   );
 }

@@ -21,13 +21,13 @@ export default function ReasonSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk about our services</h2>
+          <h2 className={classes.title}>Why Orange Mantra</h2>
           <h5 className={classes.description}>
             This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
+            company. Keep you user engaged by providing meaningful information about the company.
             Remember that by this time, the user is curious, otherwise he wouldn
             {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            more about what your company does and who are their various clients.
           </h5>
         </GridItem>
       </GridContainer>

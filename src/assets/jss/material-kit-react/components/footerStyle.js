@@ -37,7 +37,7 @@ const footerStyle = (theme) => ({
         display: "block",
         height: "1px",
         marginLeft: "15px",
-        backgroundColor: "#e5e5e5",
+        backgroundColor: "#12232E",
       },
     },
   },
@@ -49,9 +49,9 @@ const footerStyle = (theme) => ({
     position: "relative",
   },
   a: {
-    color: primaryColor,
+    color: "#12232E",
     textDecoration: "none",
-    backgroundColor: "transparent",
+    backgroundColor: "#12232E",
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
