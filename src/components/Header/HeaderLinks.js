@@ -24,7 +24,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <Button color="primary">Contact Us
+      <Button color="facebook">Contact Us
    </Button>
     </List>
   );
