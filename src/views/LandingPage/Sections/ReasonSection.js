@@ -6,6 +6,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import ShoppingCart from "@material-ui/icons/ShoppingCart";
 import Security from "@material-ui/icons/Security";
 import Language from "@material-ui/icons/Language";
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import ScreenLockPortraitIcon from '@material-ui/icons/ScreenLockPortrait';
+import StorageIcon from '@material-ui/icons/Storage';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -60,6 +63,34 @@ export default function ReasonSection() {
               vertical
             />
           </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="App Development"
+              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              icon={PhoneIphoneIcon}
+              iconColor="info"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Cyber Security"
+              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              icon={ScreenLockPortraitIcon}
+              iconColor="success"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Server Management"
+              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              icon={StorageIcon}
+              iconColor="danger"
+              vertical
+            />
+          </GridItem>
+
         </GridContainer>
       </div>
     </div>
