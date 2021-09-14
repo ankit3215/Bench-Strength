@@ -40,7 +40,7 @@ const teamStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999",
+    color: "#000000",
   },
   margin5: {
     margin: "5px",
@@ -89,17 +89,17 @@ heading: {
   cursor: 'pointer',
   padding: '8px 0',
 },
-descriptions: {
+description: {
   fontSize: '16px',
   fontWeight: 400,
   lineHeight: 1.71,
   letterSpacing: 'normal',
-  color: '#323232',
+  color: '#1a237e',
   textAlign: "left",
   cursor: 'pointer',
   fontFamily: 'CircularXXTT-Regular',
   '& a': {
-    color: "#0c6cde",
+    color: "#330033",
     fontSize: "14px",
     fontWeight: 600,
     fontFamily: 'CircularXXTT-Regular',

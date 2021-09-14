@@ -12,7 +12,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
+import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle";
 
 import Java from "assets/img/faces/Java.jpg";
 import React1 from "assets/img/faces/React.jpg";

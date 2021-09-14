@@ -48,12 +48,9 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Translating Ideas Into Reality.</h1>
+              <h1 className={classes.title}>IT Staff Augmentation & Digital Transformation Services</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+               We speed up your hiring process for technology projects by quickly deploying top professionals per your specific needs.
               </h4>
               <br />
             </GridItem>

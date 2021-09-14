@@ -22,7 +22,7 @@ export default function HiringSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={6} sm={6} md={4}>
-          <h2 className={classes.title}>One Stop Solution For Every Kind Of Talent Needs</h2>
+          <h2 className={classes.title}>One Stop Solution For Every Kind Of Hiring Needs</h2>
           <h5 className={classes.description}>
             We Provide a platform connecting companies and entrepreneurs with the right talent for their projects.
           </h5>
@@ -41,7 +41,7 @@ export default function HiringSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
-              title="Contract Workers/Freelancers"
+              title="Freelancers"
               description="Divide details about your agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={PersonIcon}
               iconColor="success"
@@ -59,7 +59,7 @@ export default function HiringSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
-              title="Bench Strength Managed Projects"
+              title="Bench-Strength Managed Projects"
               description="Divide details about your agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={GroupWorkIcon}
               iconColor="danger"

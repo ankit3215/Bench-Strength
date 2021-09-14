@@ -24,13 +24,10 @@ export default function ReasonSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Why Orange Mantra</h2>
+          <h2 className={classes.title}>Why Choose Bench-Strength?</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            company. Keep you user engaged by providing meaningful information about the company.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more about what your company does and who are their various clients.
+            By choosing Bench-Strength, you get quick access to a 
+            pool of tech experts and seasoned IT Professionals.
           </h5>
         </GridItem>
       </GridContainer>
@@ -38,8 +35,8 @@ export default function ReasonSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="E-Commerce"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Action Ready Talent"
+              description="With a ready-to-deploy pool of resources specializing in different areas of softwars, IT, and emerging tech."
               icon={ShoppingCart}
               iconColor="info"
               vertical
@@ -47,8 +44,8 @@ export default function ReasonSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="IT & Infrastructure Security"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="No wait times"
+              description="We help you bypass the notice periods and wait times and quickly line up skilled resources per your requirements."
               icon={Security}
               iconColor="success"
               vertical
@@ -56,8 +53,8 @@ export default function ReasonSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Website & CMS Development"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Project-specific expertise"
+              description="You can choose project-specific experts from a list of hand-picked professionals having years of experience"
               icon={Language}
               iconColor="danger"
               vertical
@@ -65,8 +62,8 @@ export default function ReasonSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="App Development"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Process-driven approach"
+              description="Whether it's software development, web design, or tech support, we follow a predefined process for everything"
               icon={PhoneIphoneIcon}
               iconColor="info"
               vertical
@@ -74,8 +71,8 @@ export default function ReasonSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Cyber Security"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Comprehensive expertise"
+              description="Our softwaare & IT experience spans virtually all major industries, traditional and emerging alike."
               icon={ScreenLockPortraitIcon}
               iconColor="success"
               vertical
@@ -83,8 +80,8 @@ export default function ReasonSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Server Management"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Global clients"
+              description="By choosing skilled resources from us, you give your business exposure to the global tech market."
               icon={StorageIcon}
               iconColor="danger"
               vertical
