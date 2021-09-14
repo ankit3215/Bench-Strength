@@ -21,13 +21,8 @@ import HiringSection from "./Sections/HiringSection.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import ReasonSection from "./Sections/ReasonSection.js";
-<<<<<<< HEAD
 import FaqSection from "./Sections/FaqSection";
 import TestimonialSection from "./Sections/TestimonialSection";
-=======
-import TestimonalSection from "./Sections/TestimonalSection.js";
-import FaqSection from "./Sections/FaqSection.js";
->>>>>>> bf577e72cfb6059f6a63175fe214ca90031818b0
 
 const dashboardRoutes = [];
 
@@ -71,11 +66,7 @@ export default function LandingPage(props) {
           <ProductSection />
           <TeamSection />
           <ReasonSection />
-<<<<<<< HEAD
           <TestimonialSection/>
-=======
-          <TestimonalSection/>
->>>>>>> bf577e72cfb6059f6a63175fe214ca90031818b0
           <FaqSection/>
         </div>
       </div>
