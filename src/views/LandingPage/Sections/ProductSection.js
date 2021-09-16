@@ -18,6 +18,7 @@ const useStyles = makeStyles(styles);
 export default function ProductSection() {
   const classes = useStyles();
   return (
+    <div id="services">
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
@@ -119,6 +120,7 @@ export default function ProductSection() {
           </GridItem>
         </GridContainer>
       </div>
+    </div>
     </div>
   );
 }

@@ -20,6 +20,7 @@ const useStyles = makeStyles(styles);
 export default function TestimonalSection() {
   const classes = useStyles();
   return (
+    <div  id="testimonials">
     <div className={classes.section}>
       <h2 className={classes.title}>Testimonals</h2>
       <div>
@@ -62,6 +63,7 @@ export default function TestimonalSection() {
           </GridItem>
         </GridContainer>
       </div>
+    </div>
     </div>
   );
 }

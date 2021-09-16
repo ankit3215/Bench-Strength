@@ -40,7 +40,7 @@ const customInputStyle = {
   },
   labelRoot: {
     ...defaultFont,
-    color: "#AAAAAA !important",
+    color: "#000000 !important",
     fontWeight: "400",
     fontSize: "14px",
     lineHeight: "1.42857",
@@ -61,11 +61,11 @@ const customInputStyle = {
     paddingTop: "27px",
     position: "relative",
     "& svg,& .fab,& .far,& .fal,& .fas,& .material-icons": {
-      color: "#495057",
+      color: "#880e4f",
     },
   },
   input: {
-    color: "#495057",
+    color: "#ffffff",
     height: "unset",
     "&,&::placeholder": {
       fontSize: "14px",

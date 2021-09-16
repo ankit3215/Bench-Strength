@@ -4,6 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+
 // @material-ui/icons
 
 // core components
@@ -36,11 +37,12 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
+        brand="Bench-Strength"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: "black",
+          color: "orange",
         }}
         {...rest}
       />

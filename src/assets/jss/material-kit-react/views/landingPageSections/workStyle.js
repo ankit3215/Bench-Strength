@@ -1,11 +1,11 @@
-import { title } from "assets/jss/material-kit-react.js";
+
 
 const workStyle = {
   section: {
     padding: "70px 0",
   },
   title: {
-    ...title,
+    color:"cf002a",
     marginBottom: "50px",
     marginTop: "30px",
     minHeight: "32px",
@@ -13,7 +13,7 @@ const workStyle = {
     textAlign: "center",
   },
   description: {
-    color: "#999",
+    color: "#fff",
     textAlign: "center",
   },
   textCenter: {

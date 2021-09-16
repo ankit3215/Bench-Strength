@@ -21,6 +21,7 @@ const useStyles = makeStyles(styles);
 export default function ReasonSection() {
   const classes = useStyles();
   return (
+    <div  id="why">
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
@@ -90,6 +91,7 @@ export default function ReasonSection() {
 
         </GridContainer>
       </div>
+    </div>
     </div>
   );
 }

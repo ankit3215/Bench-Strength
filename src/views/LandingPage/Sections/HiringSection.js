@@ -19,6 +19,7 @@ const useStyles = makeStyles(styles);
 export default function HiringSection() {
   const classes = useStyles();
   return (
+    <div id="hiringsection">
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={6} sm={6} md={4}>
@@ -69,6 +70,7 @@ export default function HiringSection() {
           
         </GridContainer>
       </div>
+    </div>
     </div>
   );
 }

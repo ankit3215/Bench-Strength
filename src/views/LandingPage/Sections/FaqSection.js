@@ -31,6 +31,7 @@ export default function FaqSection() {
 
 
     return (
+        <div id="faq">
         <div className={classes.mainWrapper}>
             <div className={classes.root}>
                 <Grid>
@@ -57,6 +58,7 @@ export default function FaqSection() {
                     </div>
                 </Grid>
             </div>
+        </div>
         </div>
     )
 }

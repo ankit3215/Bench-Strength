@@ -17,6 +17,7 @@ const useStyles = makeStyles(styles);
 
 export default function WorkSection() {
   const classes = useStyles();
+  const [status, setStatus] = useState(false);
   return (
     <Overlay status={status} onClose={() => setStatus(false)}>
     <div className={classes.section}>
