@@ -14,9 +14,19 @@ import CardBody from "components/Card/CardBody.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle";
 
+// importing images for faces
 import Java from "assets/img/faces/Java.jpg";
-import React1 from "assets/img/faces/React.jpg";
-import php from "assets/img/faces/php.jpg";
+import ios from "assets/img/faces/IOS.jpg";
+import eCommerce from "assets/img/faces/eCommerce.jpg";
+import magento from "assets/img/faces/Magento.png";
+import shopify from "assets/img/faces/Shopify.jpg";
+import web from "assets/img/faces/Web.png";
+import wordpress from "assets/img/faces/Wordpress.png";
+import chatbot from "assets/img/faces/Chatbot.png";
+import project from "assets/img/faces/Project.jpg";
+
+
+
 
 const useStyles = makeStyles(styles);
 
@@ -35,7 +45,7 @@ export default function TeamSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={9} className={classes.itemGrid}>
+              <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
                 <img src={Java} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
@@ -51,8 +61,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
-                <img src={React1} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
+                <img src={ios} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               iOS App Developers
@@ -67,8 +77,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
+                <img src={eCommerce} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               eCommerce Developers
@@ -83,8 +93,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
+                <img src={magento} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               Magento Developer
@@ -99,8 +109,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
+                <img src={shopify} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               Shopify Developers
@@ -115,8 +125,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={10} className={classes.itemGrid}>
+                <img src={web} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               Web Designers
@@ -131,8 +141,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
+                <img src={wordpress} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               WordPress Developers
@@ -147,8 +157,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={11} className={classes.itemGrid}>
+                <img src={chatbot} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               Chatbot Developers
@@ -163,8 +173,8 @@ export default function TeamSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
-                <img src={php} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={12} className={classes.itemGrid}>
+                <img src={project} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
               Project Managers

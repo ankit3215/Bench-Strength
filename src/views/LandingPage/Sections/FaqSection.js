@@ -15,9 +15,9 @@ const useStyles = makeStyles(styles);
 export default function FaqSection() {
 
     const [faq, getFaq] = useState([
-        { index: 1, description: 'abcjkdsnjnfsdkjkvmsdokvmsdk', heading: 'question1' },
-        { index: 2, description: 'def', heading: 'question2' },
-        { index: 3, description: 'ghi', heading: 'question3' },
+        { index: 1, description: 'The development for an Android mobile app depends on what kind of app you need. Apps with basic features and simple design costs less. If you need high-performance app with more advanced features, the cost will be different. We offer competetive pricing for every kind of mobile app.', heading: 'Q1. How mch does it cost to build an Android mobile App?' },
+        { index: 2, description: 'An eCommerce developer can do a variety of things depending on your requirements. They primarily develop, customize and maintain eCommerce websites. eCommerce developers are web developers with expertise in various eCommerce development methods and platforms', heading: 'Q2. What does an eCommerce developer do?' },
+        { index: 3, description: 'We have a seamless communication process in place for every client. You can reach out to us via email, phone, Microsoft Teams, Skype, Whatsapp etc. Our Customer Support team responds quickly to every query and request.', heading: 'Q3. How does your team maintain communication with international clients?' },
     ]);
 
     const [expanded, setExpanded] = useState(false);

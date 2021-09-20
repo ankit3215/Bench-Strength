@@ -3,9 +3,16 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import ShoppingCart from "@material-ui/icons/ShoppingCart";
-import Security from "@material-ui/icons/Security";
-import Language from "@material-ui/icons/Language";
+import MobileFriendlyIcon from '@material-ui/icons/MobileFriendly';
+import PaymentIcon from '@material-ui/icons/Payment';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import WebIcon from '@material-ui/icons/Web';
+import WifiIcon from '@material-ui/icons/Wifi';
+import BusinessIcon from '@material-ui/icons/Business';
+import FilterCenterFocusIcon from '@material-ui/icons/FilterCenterFocus';
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
+import AirplayIcon from '@material-ui/icons/Airplay';
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -35,7 +42,7 @@ export default function ProductSection() {
 
                 title="Custom Mobile Apps"
                 description="From design to deployment of a mobile app for your business, we guide you throughout the journey. Our creative designers and tech enthusiasts work in collaboration to help you."
-                icon={ShoppingCart}
+                icon={MobileFriendlyIcon}
                 iconColor="info"
                 vertical
               />
@@ -44,7 +51,7 @@ export default function ProductSection() {
               <InfoArea
                 title="Digital Payment Solutions"
                 description="We closely watch the rapidly changing arena of digital payment technologies. With our insights and specialization, you can use the most efficient technologies to your advantage."
-                icon={Security}
+                icon={PaymentIcon}
                 iconColor="success"
                 vertical
               />
@@ -53,7 +60,7 @@ export default function ProductSection() {
               <InfoArea
                 title="eCommerce Platform Development"
                 description="Being one of the pioneers in eCommerce, we know what suits your business best. Our expertise is built on years of diverse experience in design, development, and technical support."
-                icon={Language}
+                icon={BusinessCenterIcon}
                 iconColor="danger"
                 vertical
               />
@@ -63,7 +70,7 @@ export default function ProductSection() {
 
                 title="Custom Website Development"
                 description="The scopes of a website extend much beyond just the ‘digital presence’ of your business. We help you explore the limitless digital space using an advanced website designed for engagement."
-                icon={ShoppingCart}
+                icon={WebIcon}
                 iconColor="info"
                 vertical
               />
@@ -72,7 +79,7 @@ export default function ProductSection() {
               <InfoArea
                 title="Remote Work Management"
                 description="With our consulting, you can easily plan a remote work model and implement it. Having a remote working infrastructure makes you prepared for any potential disaster and unforeseen situations."
-                icon={Security}
+                icon={WifiIcon}
                 iconColor="success"
                 vertical
               />
@@ -81,7 +88,7 @@ export default function ProductSection() {
               <InfoArea
                 title="Business Automation Solutions"
                 description="We swiftly develop software solutions that help you efficiently incorporate automation into business by implementing AI, ML, & chatbots, and other emerging technologies."
-                icon={Language}
+                icon={BusinessIcon}
                 iconColor="danger"
                 vertical
               />
@@ -91,7 +98,7 @@ export default function ProductSection() {
 
                 title="Enterprise Solutions Development"
                 description="We enable businesses to leverage the most evolved breed of software. With cutting-edge tech and highly experienced programmers, we deliver unmatched software applications."
-                icon={ShoppingCart}
+                icon={FilterCenterFocusIcon}
                 iconColor="info"
                 vertical
               />
@@ -100,7 +107,7 @@ export default function ProductSection() {
               <InfoArea
                 title="Digital Transformation Consulting"
                 description="We figure out tech solutions and software tools that would be the most suitable for the client. Our consultants also make sure the technologies you adopt are bring the desired ROI."
-                icon={Security}
+                icon={ContactPhoneIcon}
                 iconColor="success"
                 vertical
               />
@@ -109,7 +116,7 @@ export default function ProductSection() {
               <InfoArea
                 title="Emerging Tech Solutions"
                 description="With industry-best tools and technologies, we power you to quickly catch up with the shifting market trends using an array of customer-focused features for your business."
-                icon={Language}
+                icon={AirplayIcon}
                 iconColor="danger"
                 vertical
               />
