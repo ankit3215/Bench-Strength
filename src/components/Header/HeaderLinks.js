@@ -12,7 +12,6 @@ import CardBody from "components/Card/CardBody";
 import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
 
-
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
 // @material-ui/core components
@@ -25,48 +24,50 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
+    const [open, setOpen] = useState(false)
   const [status, setStatus] = useState(false);
 
+ 
   return (
     <>
     <GridContainer>
     <flex>
-      <Button variant="Link" color="Secondary">
+      <Button variant="Link" color="primary">
         <Link to="hiringsection" spy={true} smooth={true}>
           Hiring Section
         </Link>
       </Button>
       </flex>
       <flex>
-      <Button variant="Link" color="Secondary">
+      <Button variant="Link">
         <Link to="services" spy={true} smooth={true}>
           Our Services
         </Link>
       </Button>
       </flex>
       <flex>
-      <Button variant="Link" color="Secondary">
+      <Button variant="Link">
         <Link to="team" spy={true} smooth={true}>
           Team
         </Link>
       </Button>
       </flex>
       <flex>
-      <Button variant="Link" color="Secondary">
+      <Button variant="Link">
         <Link to="why" spy={true} smooth={true}>
           Why Us?
         </Link>
       </Button>
       </flex>
       <flex>
-      <Button variant="Link" color="Secondary">
+      <Button variant="Link">
         <Link to="testimonials" spy={true} smooth={true}>
           Testimonials
         </Link>
       </Button>
       </flex>
       <flex>
-      <Button variant="Link" color="Secondary">
+      <Button variant="Link">
         <Link to="faq" spy={true} smooth={true}>
           FAQs
         </Link>
@@ -96,6 +97,7 @@ export default function HeaderLinks(props) {
                         <CustomInput
                           labelText="Your Name/Company Name"
                           id="name"
+                          
                           formControlProps={{
                             fullWidth: true,
                           }}
@@ -105,6 +107,7 @@ export default function HeaderLinks(props) {
                         <CustomInput
                           labelText="Your Email/Business Email"
                           id="email"
+                         
                           formControlProps={{
                             fullWidth: true,
                           }}
@@ -144,14 +147,15 @@ export default function HeaderLinks(props) {
                         />
                       </GridItem>
                       <GridItem xs={12} sm={12} md={4}>
-                        <Button color="primary">Send Message</Button>
+                        <Button variant="contained" color="primary">Send Message</Button>
                       </GridItem>
                     </GridContainer>
                   </form>
                 </GridItem>
               </GridContainer>
-            </div>
+              </div>
           </CardBody>
+          
         </Card>
       </Overlay>
     </>

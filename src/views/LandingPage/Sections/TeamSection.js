@@ -39,15 +39,12 @@ export default function TeamSection() {
                 <img src={Java} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Java
+              Android App Developers
                 <br />
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Impressively skilled, noticeably creative, and highly experienced software developers for all your mobile app requirements.
                 </p>
               </CardBody>
             </Card>
@@ -58,15 +55,12 @@ export default function TeamSection() {
                 <img src={React1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                React JS
+              iOS App Developers
                 <br />
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Choose iOS app experts from a team of hand-picked app developers with years of experience across industry verticals.
                 </p>
               </CardBody>
             </Card>
@@ -77,15 +71,108 @@ export default function TeamSection() {
                 <img src={php} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                PHP
+              eCommerce Developers
                 <br />
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Exceptionally skilled, noticeably experienced, and uncompromisingly professional eCommerce developers to choose from.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
+                <img src={php} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+              Magento Developer
+                <br />
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Certified and experienced Magento developers who meet all your eCommerce needs and ensure flawless user experiences.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
+                <img src={php} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+              Shopify Developers
+                <br />
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Power up your online business using the skills of industry-best Shopify developers having diverse experiences in eCommerce.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
+                <img src={php} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+              Web Designers
+                <br />
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Exceptionally creative web designers to ensure a captivating digital presence of your business by creating engaging features.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
+                <img src={php} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+              WordPress Developers
+                <br />
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Experienced developers with masterful programming skills, prompt communication abilities, and out-of-the-box thinking.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
+                <img src={php} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+              Chatbot Developers
+                <br />
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Getting the desired ROI from a chatbot requires expertise. That’s why you need to hire chatbot developers with the right skills.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={10} sm={10} md={12} className={classes.itemGrid}>
+                <img src={php} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+              Project Managers
+                <br />
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                Hire seasoned project managers with exceptional problem-solving skills, and a knack for cutting-edge digital technologies.
                 </p>
               </CardBody>
             </Card>

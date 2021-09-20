@@ -34,10 +34,41 @@ export default function Footer(props) {
       <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <h4>Tower A,Spaze i Techpark, 650,6th floor,Sohna road Gurugram</h4>
+              
+              <h1>Contact Info</h1>
+              <h2>Address</h2>
+              <h4>Unit No. 650, 6th Floor,</h4>
+              <h4>Tower A, Spaze itech Park,</h4>
+              <h4>Sector-49, Sohna Road, Gurgaon.</h4>
+              
+              <h2>Phone</h2>
+              <h4>+91 98666 78787</h4>
+              
+              <h2>Email</h2>
+              infor@orangemantra.com
+            
             </ListItem>
           </List>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <div className={classes.right}>
         <List className={classes.list}>
       <ListItem className={classes.listItem}>

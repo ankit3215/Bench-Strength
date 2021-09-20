@@ -14,6 +14,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
+import HiringProcess from "./Sections/HiringProcess.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
@@ -64,6 +65,7 @@ export default function LandingPage(props) {
           <HiringSection />
           <ProductSection />
           <TeamSection />
+          <HiringProcess/>
           <ReasonSection />
           <TestimonialSection/>
           <FaqSection/>
