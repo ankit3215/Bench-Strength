@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from "react";
+import React,{ useState, useEffect } from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -10,8 +10,8 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "components/CustomButtons/Button.js";
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import { Link } from "react-scroll";
+import './footer.css';
 
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
 
@@ -19,6 +19,8 @@ const useStyles = makeStyles(styles);
 
 export default function Footer(props) {
   const classes = useStyles();
+  const [open, setOpen] = useState(false)
+  const [status, setStatus] = useState(false);
   const { whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
@@ -29,9 +31,10 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont,
   });
   return (
+
     <footer className={footerClasses}>
       <div className={classes.container}>
-      <div className={classes.left}>
+       <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               
@@ -50,27 +53,82 @@ export default function Footer(props) {
             </ListItem>
           </List>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+        
         <div className={classes.right}>
-        <List className={classes.list}>
+        
+    <div><h1>SiteMap</h1></div>
+    <ul>
+      <a className="classes.listitem">
+      <Button color="transparent">
+            <Link to="hiringsection" className="test1" spy={true} smooth={true}>
+              Hiring Needs
+            </Link>
+          </Button>
+          </a>
+          <br/>
+          
+          <a>
+          <Button color="transparent">
+            <Link to="services" className="test1" spy={true} smooth={true}>
+              Our Services
+            </Link>
+          </Button>
+          </a>
+          <br/>
+         
+          <a>
+          <Button color="transparent">
+            <Link to="team" className="test1" spy={true} smooth={true}>
+              Team
+            </Link>
+          </Button>
+          </a>
+         
+          <br/>
+          <a>
+          <Button color="transparent">
+            <Link to="why" className="test1" spy={true} smooth={true}>
+              Why Us?
+            </Link>
+          </Button>
+          </a>
+         
+          <br/>
+          <a>
+          <Button color="transparent"> 
+            <Link to="testimonials" className="test1" spy={true} smooth={true}>
+              Testimonial
+            </Link>
+          </Button>
+          </a>
+          
+          <br/>
+          <a>
+          <Button color="transparent"> 
+            <Link to="faq" className="test1" spy={true} smooth={true}>
+             FAQ's
+            </Link>
+          </Button>
+      </a>
+      </ul>
+      <List className={classes.list}>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-tooltip"
+          title="Connect with us on Linkedin"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="facebook"
+            href="https://www.linkedin.com/company/orange-mantra"
+            target="_blank"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-linkedin-in"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
@@ -86,7 +144,7 @@ export default function Footer(props) {
           <Button
             href="https://twitter.com/Orangemantraggn"
             target="_blank"
-            color="transparent"
+            color="twitter"
             className={classes.navLink}
           >
             <i className={classes.socialIcons + " fab fa-twitter"} />
@@ -101,7 +159,7 @@ export default function Footer(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            color="transparent"
+            color="facebook"
             href="https://www.facebook.com/OrangeMantraIndia"
             target="_blank"
             className={classes.navLink}
@@ -110,27 +168,15 @@ export default function Footer(props) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Connect with us on Linkedin"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.linkedin.com/company/orange-mantra"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-linkedin-in"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+     
     </List>
+
         </div>
+      
+          
       </div>
     </footer>
+    
   );
 }
 

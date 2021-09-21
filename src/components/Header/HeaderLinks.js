@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // react components for routing our app without refresh
 
 import emailjs from 'emailjs-com';
-
+import card from '../Header/card.css'
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -12,6 +12,7 @@ import Overlay from "components/Overlay/Overlay.js";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
 import { Link } from "react-scroll";
+import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
@@ -43,49 +44,54 @@ export default function HeaderLinks(props) {
   return (
     <>
       <GridContainer>
-        <flex>
-          <Button variant="Link" color="primary">
-            <Link to="hiringsection" spy={true} smooth={true}>
-              Hiring Section
+       <Grid xs={12} sm={12} md={2}>
+          <Button variant="text" color="primary">
+            <Link to="hiringsection" className="test1" spy={true} smooth={true}>
+              Hiring Needs
             </Link>
           </Button>
-        </flex>
-        <flex>
-          <Button variant="Link">
-            <Link to="services" spy={true} smooth={true}>
+         </Grid>
+       
+         <Grid xs={12} sm={12} md={2}>
+          <Button variant="text" color="primary">
+            <Link to="services" className="test1" spy={true} smooth={true}>
               Our Services
             </Link>
           </Button>
-        </flex>
-        <flex>
-          <Button variant="Link">
-            <Link to="team" spy={true} smooth={true}>
+         </Grid>
+         
+
+         
+         <Grid xs={12} sm={12} md={2}>
+          <Button variant="text" color="primary">
+            <Link to="team" className="test1" spy={true} smooth={true}>
               Team
             </Link>
           </Button>
-        </flex>
-        <flex>
-          <Button variant="Link">
-            <Link to="why" spy={true} smooth={true}>
+         </Grid>
+        
+        
+        <Grid xs={12} sm={12} md={2}>
+          <Button variant="text" color="primary">
+            <Link to="why" className="test1" spy={true} smooth={true}>
               Why Us?
             </Link>
           </Button>
-        </flex>
-        <flex>
-          <Button variant="Link">
-            <Link to="testimonials" spy={true} smooth={true}>
-              Testimonials
+         </Grid>
+         
+        
+        
+       <Grid xs={12} sm={12} md={2}>
+          <Button variant="text" color="primary"> 
+            <Link to="testimonials" className="test1" spy={true} smooth={true}>
+             Client's Testimonial
             </Link>
           </Button>
-        </flex>
-        <flex>
-          <Button variant="Link">
-            <Link to="faq" spy={true} smooth={true}>
-              FAQs
-            </Link>
-          </Button>
-        </flex>
-        <flex>
+         </Grid>
+
+       
+      
+         <Grid xs={12} sm={12} md={1}>
           <Button
             onClick={() => setStatus(true)}
             variant="outlined"
@@ -93,7 +99,13 @@ export default function HeaderLinks(props) {
           >
             Contact Us
           </Button>
-        </flex>
+         </Grid>
+      
+       
+         
+         <GridContainer>
+      
+      </GridContainer>
       </GridContainer>
 
       <Overlay status={status} onClose={() => setStatus(false)}>

@@ -76,11 +76,10 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <img  src={call} alt="..." className="photo" />
      
-      {brandComponent}
-     
       <Toolbar className={classes.container}>
         <br/>
-      <Hidden smDown implementation="css">
+      
+      <Hidden smDown implementation="css">        
           {rightLinks}
         </Hidden>
         <Hidden mdUp>
@@ -100,11 +99,13 @@ export default function Header(props) {
           open={mobileOpen}
           classes={{
             paper: classes.drawerPaper,
+            color: "white",
           }}
           onClose={handleDrawerToggle}
         >
           <div className={classes.appResponsive}>
             {leftLinks}
+           
             {rightLinks}
           </div>
         </Drawer>

@@ -1,21 +1,42 @@
 import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
+// react component for creating beautiful carousel
+import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
 // @material-ui/icons
-
+import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import Card from "components/Card/Card.js";
+
+import image1 from "assets/img/bg.jpg";
+
+import testimonial from "./testimonial.css";
+
+const containerFluid = {
+  paddingRight: "15px",
+  paddingLeft: "15px",
+  marginRight: "auto",
+  marginLeft: "auto",
+  width: "100%",
+};
+
 
 const useStyles = makeStyles({
+  section: {
+    padding: "5px 0",
+  },
+  container:{
+    
+    "@media (min-width: 12000px)": {
+      maxWidth: "11400px",
+    },
+  },
+  marginAuto: {
+    marginLeft: "auto !important",
+    marginRight: "auto !important",
+  },
   root: {
     color:"#000000",
     minWidth: 275,
@@ -45,39 +66,50 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TestimonalSection() {
+export default function TestimonialSection() {
   const classes = useStyles();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+  };
   return (
-    <div id="testimonials">
-      <div className={classes.section}>
-        <center>
+    <div className={classes.section} id="testimonials">
+       <center>
           <h2 className={classes.title}>Client Testimonals</h2>
         </center>
-        <div>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
-              <Card className={classes.root} variant="outlined">
-                <CardContent style={{backgroundColor: "orange"}}>
-                  <Typography className={classes.pos} color="textSecondary">
+        <center>
+      <div className={classes.container}>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+            <Card carousel>
+              <Carousel {...settings}>
+                <div className="head-text">
+                  <img src={image1} alt="First slide" className="slick-image" />
+                  <div className="text-on-image">
+                  <h4 className={classes.pos}>
                     "Our long search for a skilled Magento developer's team
                     ended at Bench Strength. The team built a completely
                     flawless eCommerce website. Being an FMCG company, we needed
                     the site to have diverse features and product listing
                     capabilities."
-                  
+                    <br />
                     <br />- MD at an FMCG company
                     <br />
                     <br />
                     <br/>
                     <br/>
-                  </Typography>
-                </CardContent>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
-              <Card className={classes.root} variant="outlined">
-                <CardContent style={{backgroundColor: "orange"}}>
-                  <Typography className={classes.pos} color="textSecondary">
+                    </h4>
+                  </div>
+                </div>
+                <div className="head-text">
+                  <img src={image1} alt="First slide" className="slick-image" />
+                  <div className="text-on-image">
+                    <h4 className={classes.pos}>
+                      
                     "We had to ramp up the online food delivery during the
                     pandemic-induced lockdowns. We needed a chatbot that can
                     take orders and reduce our dependence on manual processes .
@@ -91,14 +123,13 @@ export default function TestimonalSection() {
                     <br />
                     <br/>
                     <br/>
-                  </Typography>
-                </CardContent>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
-              <Card className={classes.root} variant="outlined">
-                <CardContent style={{backgroundColor: "orange"}}>
-                  <Typography className={classes.pos} color="textSecondary">
+                    </h4>
+                  </div>
+                </div>
+                <div className="head-text">
+                  <img src={image1} alt="First slide" className="slick-image" />
+                  <div className="text-on-image">
+                  <h4 className={classes.pos}>
                     "We hired a mobile app team to build an all-in-one app for
                     automobile parts, services and customer support. The app
                     made our products more easily accessible and significantly
@@ -110,13 +141,15 @@ export default function TestimonalSection() {
                     <br />
                     <br />
                     <br/>
-                  </Typography>
-                </CardContent>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
+                    </h4>
+                  </div>
+                </div>
+              </Carousel>
+            </Card>
+          </GridItem>
+        </GridContainer>
       </div>
+      </center>
     </div>
   );
 }

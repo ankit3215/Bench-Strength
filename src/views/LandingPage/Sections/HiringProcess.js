@@ -14,10 +14,6 @@ import CardBody from "components/Card/CardBody.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle";
 
-import Java from "assets/img/faces/Java.jpg";
-import React1 from "assets/img/faces/React.jpg";
-import php from "assets/img/faces/php.jpg";
-
 const useStyles = makeStyles(styles);
 
 export default function TeamSection() {
