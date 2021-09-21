@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react';
-//import { Button } from '../Button/Button';
-import { Link } from 'react-scroll';
-import './Navbar.css';
-import { GiThreeFriends } from 'react-icons/gi';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
+/*eslint-disable*/
+import React, { useState, useEffect } from "react";
+// react components for routing our app without refresh
+
 import emailjs from 'emailjs-com';
 import card from '../Header/card.css'
 // core components
@@ -14,6 +11,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Overlay from "components/Overlay/Overlay.js";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
+import { Link } from "react-scroll";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
@@ -21,6 +19,9 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/work
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+
+// core components
+//import card from "components/Header/card.css";
 
 const useStyles = makeStyles(styles);
 
@@ -33,104 +34,38 @@ const sendEmail = (e) => {
 }
 
 
-function HeaderLinks() {
+
+export default function HeaderLinks1(props) {
   const classes = useStyles();
   const [open, setOpen] = useState(false)
   const [status, setStatus] = useState(false);
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  const obj = [
-    {
-      menu:"Hiring Developers",
-      ids:"hiringsection",
-    },
-    {
-      menu:"Services",
-      ids:"services",
-      sub_menu:[
-        {ids:"service",subMenu:"Service"},
-      ]
-    },
-    {
-      menu:"Teams",
-      ids:"team",
-      sub_menu:[
-        {ids:"about",subMenu:"About Us"},
-        {ids:"why_us",subMenu:"Why Choose Us"},
-      ]
-    },
-    {
-      menu:"Testimonials",
-      ids:"testimonials",
-    },
-    {
-      menu:"FAQs",
-      ids:"faq",
-    },
-  ]
-
-  useEffect(() => {
-    showButton();
-    window.addEventListener('resize', showButton);
-  }, []);
+  const obj = ["hiring developer","our service", "team", "why us", "client's testimonial"]
 
   return (
     <>
-   
-      <IconContext.Provider value={{ color: '#fff' }}>
-        <nav className='navbar'>
-          <div className='navbar-container container'>
-            <Link to="banner" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
-            <GiThreeFriends className='navbar-icon' />Bench Strength
-            </Link>
-            <div className='menu-icon' onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              {
-                obj?.map(item=>
-                  <li className='nav-item' style={{cursor:"pointer"}}>
-                    <Link to={item?.ids} spy={true} smooth={true} className='nav-links' onClick={closeMobileMenu}>
-                      {item?.menu}
-                    </Link>
-                </li>
-                )
-              }              
-               {/* <li className='nav-btn'>
-                {button ? (
-                  <Link to="contact" spy={true} smooth={true} className='btn-link'>
-                    <Button buttonStyle='btn--outline'>Contact Us</Button>
-                  </Link>
-                ) : (
-                  <Link to="contact" spy={true} smooth={true} className='btn-link'>
-                    <Button buttonStyle='btn--outline' buttonSize='btn--mobile' onClick={closeMobileMenu} >
-                      Contact Us
-                    </Button>
-                  </Link>
-                )}
-              </li>  */}
-               <li className='nav-btn'>
-       <Button
-         onClick={() => setStatus(true)}
-         variant="outlined"
-         color="Secondary"
-       >
-         Contact&nbsp;Us
-       </Button>
-       </li>
-       <Overlay status={status} onClose={() => setStatus(false)}>
+      <GridContainer style={{width:"200%", marginRight:"150px"}}>
+      
+       
+      
+         <Grid xs={12} sm={12} md={2} style={{marginRight:"50px", float:"right"}}>
+          <Button
+            onClick={() => setStatus(true)}
+            variant="outlined"
+            color="Secondary"
+          >
+            Contact&nbsp;Us
+          </Button>
+         </Grid>
+      
+       
+         
+         <GridContainer>
+      
+      </GridContainer>
+      </GridContainer>
+
+      <Overlay status={status} onClose={() => setStatus(false)}>
         <Card className="card">
           <CardBody className="card">
             <div className={classes.section}>
@@ -212,12 +147,6 @@ function HeaderLinks() {
 
         </Card>
       </Overlay>
-            </ul>
-          </div>
-        </nav>
-      </IconContext.Provider>
     </>
   );
 }
-
-export default HeaderLinks;

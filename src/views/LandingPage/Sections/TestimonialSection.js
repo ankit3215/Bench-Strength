@@ -1,46 +1,28 @@
-import React from "react";
-// react component for creating beautiful carousel
-import Carousel from "react-slick";
+import React,{useState} from "react";
+// nodejs library that concatenates classes
+import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+
 // @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
 
-import image1 from "assets/img/bg.jpg";
-
-import testimonial from "./testimonial.css";
-
-const containerFluid = {
-  paddingRight: "15px",
-  paddingLeft: "15px",
-  marginRight: "auto",
-  marginLeft: "auto",
-  width: "100%",
-};
 
 
 const useStyles = makeStyles({
-  section: {
-    padding: "5px 0",
-  },
-  container:{
-    
-    "@media (min-width: 12000px)": {
-      maxWidth: "11400px",
-    },
-  },
-  marginAuto: {
-    marginLeft: "auto !important",
-    marginRight: "auto !important",
-  },
   root: {
     color:"#000000",
     minWidth: 275,
-    maxHeight: 240,
+    maxHeight: 220,
+    borderRadius:"5%"
 
   },
   bullet: {
@@ -66,50 +48,47 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TestimonialSection() {
+
+export default function TestimonalSection() {
+
+  // const [testimonials,setTestimonals] = useState([
+  //   {header:"",body:"Our long search for a skilled Magento developer's team ended at Bench Strength. The team built a completely flawless eCommerce website. Being an FMCG company, we needed the site to have diverse features and product listing capabilities.", footer:"-MD at an FMCG company"},
+  //   {header:"",body:"We had to ramp up the online food delivery during the pandemic-induced lockdowns. We needed a chatbot that can take orders and reduce our dependence on manual processes . Bench Strength's chatbot developers efficiently all our requirements.", footer:"-Co-owner of restaurant chain in Delhi-NCR"},
+  //   {header:"",body:"We hired a mobile app team to build an all-in-one app for automobile parts, services and customer support. The app made our products more easily accessible and significantly improved our customer service.", footer:"-CTO of a leading automobile parts companys"}
+  // ])
+
   const classes = useStyles();
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-  };
   return (
-    <div className={classes.section} id="testimonials">
-       <center>
-          <h2 className={classes.title}>Client Testimonals</h2>
-        </center>
+    <div id="testimonials">
+      <div className={classes.section}>
         <center>
-      <div className={classes.container}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
-            <Card carousel>
-              <Carousel {...settings}>
-                <div className="head-text">
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="text-on-image">
-                  <h4 className={classes.pos}>
+          <h2 className={classes.title}>Client Testimonials</h2>
+        </center>
+        <div>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={4}>
+              <Card className={classes.root} variant="outlined">
+                <CardContent style={{backgroundColor: "white"}}>
+                  <Typography className={classes.pos} color="textSecondary">
                     "Our long search for a skilled Magento developer's team
                     ended at Bench Strength. The team built a completely
                     flawless eCommerce website. Being an FMCG company, we needed
                     the site to have diverse features and product listing
                     capabilities."
-                    <br />
+                 
                     <br />- MD at an FMCG company
                     <br />
                     <br />
                     <br/>
                     <br/>
-                    </h4>
-                  </div>
-                </div>
-                <div className="head-text">
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="text-on-image">
-                    <h4 className={classes.pos}>
-                      
+                  </Typography>
+                </CardContent>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={4}>
+              <Card className={classes.root} variant="outlined">
+                <CardContent style={{backgroundColor: "white"}}>
+                  <Typography className={classes.pos} color="textSecondary">
                     "We had to ramp up the online food delivery during the
                     pandemic-induced lockdowns. We needed a chatbot that can
                     take orders and reduce our dependence on manual processes .
@@ -117,39 +96,38 @@ export default function TestimonialSection() {
                     requirements."
                     <br />
                     <br />
-                    
+                   
                     -Co-owner of restaurant chain in Delhi-NCR
                     <br />
                     <br />
                     <br/>
                     <br/>
-                    </h4>
-                  </div>
-                </div>
-                <div className="head-text">
-                  <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="text-on-image">
-                  <h4 className={classes.pos}>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={4}>
+              <Card className={classes.root} variant="outlined">
+                <CardContent style={{backgroundColor: "white"}}>
+                  <Typography className={classes.pos} color="textSecondary">
                     "We hired a mobile app team to build an all-in-one app for
                     automobile parts, services and customer support. The app
                     made our products more easily accessible and significantly
                     improved our customer service."
                     <br />
                     <br />
-                    
+                   
                     -CTO of a leading automobile parts company
                     <br />
                     <br />
                     <br/>
-                    </h4>
-                  </div>
-                </div>
-              </Carousel>
-            </Card>
-          </GridItem>
-        </GridContainer>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </GridItem>
+          </GridContainer>
+        </div>
       </div>
-      </center>
     </div>
   );
 }

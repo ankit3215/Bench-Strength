@@ -34,7 +34,7 @@ export default function HiringSection() {
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
               title="Full-Time Hiring"
-              description="Divide details about your agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Hire Professionals who work with you for full time, in your office"
               icon={PeopleAltIcon}
               iconColor="info"
               vertical
@@ -43,7 +43,7 @@ export default function HiringSection() {
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
               title="Freelancers"
-              description="Divide details about your agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Collaborate with professionals who specialize in contract-based projects"
               icon={PersonIcon}
               iconColor="success"
               vertical
@@ -52,7 +52,7 @@ export default function HiringSection() {
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
               title="Remote Teams"
-              description="Divide details about your agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Build a remote team with professionals working from their preferred locations"
               icon={SettingsRemoteIcon}
               iconColor="danger"
               vertical
@@ -61,7 +61,7 @@ export default function HiringSection() {
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
               title="Bench-Strength Managed Projects"
-              description="Divide details about your agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Let us take care of everything- from building the team to managing projects"
               icon={GroupWorkIcon}
               iconColor="danger"
               vertical

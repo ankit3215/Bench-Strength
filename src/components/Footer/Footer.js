@@ -1,185 +1,89 @@
-/*eslint-disable*/
-import React,{ useState, useEffect } from "react";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// material-ui core components
-import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
-import Button from "components/CustomButtons/Button.js";
-import { Link } from "react-scroll";
+import React from 'react';
 import './footer.css';
+//import { Button } from '../Button/Button';
+import { Link } from 'react-scroll';
+import { MdFingerprint } from 'react-icons/md';
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { GiThreeFriends } from 'react-icons/gi';
 
-import styles from "assets/jss/material-kit-react/components/footerStyle.js";
-
-const useStyles = makeStyles(styles);
-
-export default function Footer(props) {
-  const classes = useStyles();
-  const [open, setOpen] = useState(false)
-  const [status, setStatus] = useState(false);
-  const { whiteFont } = props;
-  const footerClasses = classNames({
-    [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont,
-  });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont,
-  });
+function Footer() {
   return (
-
-    <footer className={footerClasses}>
-      <div className={classes.container}>
-       <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              
-              <h1>Contact Info</h1>
-              <h2>Address</h2>
-              <h4>Unit No. 650, 6th Floor,</h4>
-              <h4>Tower A, Spaze itech Park,</h4>
-              <h4>Sector-49, Sohna Road, Gurgaon.</h4>
-              
-              <h2>Phone</h2>
-              <h4>+91 98666 78787</h4>
-              
-              <h2>Email</h2>
-              infor@orangemantra.com
-            
-            </ListItem>
-          </List>
-        </div>
-        
-        <div className={classes.right}>
-        
-    <div><h1>SiteMap</h1></div>
-    <ul>
-      <a className="classes.listitem">
-      <Button color="transparent">
-            <Link to="hiringsection" className="test1" spy={true} smooth={true}>
-              Hiring Needs
-            </Link>
-          </Button>
-          </a>
-          <br/>
-          
-          <a>
-          <Button color="transparent">
-            <Link to="services" className="test1" spy={true} smooth={true}>
-              Our Services
-            </Link>
-          </Button>
-          </a>
-          <br/>
-         
-          <a>
-          <Button color="transparent">
-            <Link to="team" className="test1" spy={true} smooth={true}>
-              Team
-            </Link>
-          </Button>
-          </a>
-         
-          <br/>
-          <a>
-          <Button color="transparent">
-            <Link to="why" className="test1" spy={true} smooth={true}>
-              Why Us?
-            </Link>
-          </Button>
-          </a>
-         
-          <br/>
-          <a>
-          <Button color="transparent"> 
-            <Link to="testimonials" className="test1" spy={true} smooth={true}>
-              Testimonial
-            </Link>
-          </Button>
-          </a>
-          
-          <br/>
-          <a>
-          <Button color="transparent"> 
-            <Link to="faq" className="test1" spy={true} smooth={true}>
-             FAQ's
-            </Link>
-          </Button>
-      </a>
-      </ul>
-      <List className={classes.list}>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Connect with us on Linkedin"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="facebook"
-            href="https://www.linkedin.com/company/orange-mantra"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-linkedin-in"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
-        <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://twitter.com/Orangemantraggn"
-            target="_blank"
-            color="twitter"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="facebook"
-            href="https://www.facebook.com/OrangeMantraIndia"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-     
-    </List>
-
-        </div>
+    <div className='footer-container'>
+      <section className='footer-subscription'>
+        <p className='footer-subscription-heading'>
+        <MdFingerprint className='navbar-icon' />Bench Strength
+        </p>
+        <p className='footer-subscription-text'>
+        Make Your Own Team Of Qualified Developers
+        </p>
+        {/* <div className='input-areas'>
+          <form>
+            <input className='footer-input' name='email' type='email' placeholder='Your Email' />
+            <Button buttonStyle='btn--outline'>Subscribe</Button>
+          </form>
+        </div> */}
+      </section>
+      <div className='footer-links'>
+        <div className='footer-link-wrapper'>
+          <div className='footer-link-items'>
+            <h2>About Us</h2>
+            <Link spy={true} smooth={true} to='why'>Why Choose Us</Link>
+            <Link spy={true} smooth={true} to='testimonials'>Testimonials</Link>
+            <Link spy={true} smooth={true} to='faq'>FAQs</Link>
       
-          
+          </div>
+          <div className='footer-link-items'>
+            <h2>Bench Strength</h2>
+            <Link spy={true} smooth={true} to='hiringsection'>Hire Developers according to your Choice</Link>
+            <Link spy={true} smooth={true} to='team'>Teams</Link>
+           
+          </div>
+        </div>
+        <div className='footer-link-wrapper'>
+          <div className='footer-link-items'>
+            <h2>Services</h2>
+            <Link spy={true} smooth={true} to='services'>Our Services</Link>
+            <Link spy={true} smooth={true} to='hiringprocess'>Hiring Process</Link>
+            
+          </div>
+          <div className='footer-link-items'>
+            <h2>Address</h2>
+            <Link to='/'>Unit No. 650, 6th Floor,</Link>
+            <Link to='/'>Tower A, Spaze iTechPark,</Link>
+            <Link to='/'>Sector-49, Sohna Road,</Link>
+            <Link to='/'>Gurgaon.</Link>
+          </div>
+        </div>
       </div>
-    </footer>
-    
+      <section className='social-media'>
+        <div className='social-media-wrap'>
+          <div className='footer-logo'>
+            <Link to='banner' spy={true} smooth={true} className='social-logo'>
+            <GiThreeFriends className='navbar-icon' />Bench Strength
+            </Link>
+          </div>
+          <small className='website-rights'></small>
+          <div className='social-icons'>
+            <Link className='social-icon-link' to='/' target='_blank' aria-label='Facebook' >
+              <FaFacebook />
+            </Link>
+            <Link className='social-icon-link' to='/' target='_blank' aria-label='Instagram' >
+              <FaInstagram />
+            </Link>
+            <Link className='social-icon-link' to="/" target='_blank' aria-label='Youtube' >
+              <FaYoutube />
+            </Link>
+            <Link className='social-icon-link' to='/' target='_blank' aria-label='Twitter' >
+              <FaTwitter />
+            </Link>
+            <Link className='social-icon-link' to='/' target='_blank' aria-label='LinkedIn' >
+              <FaLinkedin />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
-Footer.propTypes = {
-  whiteFont: PropTypes.bool,
-};
+export default Footer;

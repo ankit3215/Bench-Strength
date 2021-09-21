@@ -35,7 +35,7 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
+      {/* <Header
         color="transparent"
         routes={dashboardRoutes}
         rightLinks={<HeaderLinks />}
@@ -45,7 +45,8 @@ export default function LandingPage(props) {
           color: "orange",
         }}
         {...rest}
-      />
+      /> */}
+      <HeaderLinks/>
       <Parallax filter image={require("assets/img/Banner.png").default}>
         <div className={classes.container}>
           <GridContainer>
