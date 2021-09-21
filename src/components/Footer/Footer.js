@@ -11,7 +11,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        <MdFingerprint className='navbar-icon' />Bench Strength
+        <GiThreeFriends className='navbar-icon' />Bench Strength
         </p>
         <p className='footer-subscription-text'>
         Make Your Own Team Of Qualified Developers

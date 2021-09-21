@@ -53,7 +53,7 @@ function HeaderLinks() {
 
   const obj = [
     {
-      menu:"Hiring Developers",
+      menu:"Hire Developers",
       ids:"hiringsection",
     },
     {
