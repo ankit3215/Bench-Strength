@@ -14,7 +14,6 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Overlay from "components/Overlay/Overlay.js";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
-import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
@@ -66,10 +65,10 @@ function HeaderLinks() {
     {
       menu:"Teams",
       ids:"team",
-      sub_menu:[
-        {ids:"about",subMenu:"About Us"},
-        {ids:"why_us",subMenu:"Why Choose Us"},
-      ]
+    },
+    {
+      menu:"Why Us",
+      ids:"why",
     },
     {
       menu:"Testimonials",

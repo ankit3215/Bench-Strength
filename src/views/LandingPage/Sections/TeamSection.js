@@ -40,7 +40,7 @@ export default function TeamSection() {
   return (
     <div id="team">
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      <h2 className={classes.title}>Tech Experts For Every Kind Of Requirement</h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
