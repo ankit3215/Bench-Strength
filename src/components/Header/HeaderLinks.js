@@ -7,6 +7,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import emailjs from 'emailjs-com';
 import card from '../Header/card.css'
+import Call from "assets/img/Call.png"
+import './photo.css'
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -15,6 +17,9 @@ import Overlay from "components/Overlay/Overlay.js";
 import Card from "components/Card/Card";
 import CardBody from "components/Card/CardBody";
 import Button from "@material-ui/core/Button";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
@@ -38,6 +43,7 @@ function HeaderLinks() {
   const [status, setStatus] = useState(false);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const notify = () => toast("Thanks for Reaching Us! Your Message has been recieved.");
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -92,7 +98,9 @@ function HeaderLinks() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to="banner" spy={true} smooth={true} className='navbar-logo' onClick={closeMobileMenu}>
-            <GiThreeFriends className='navbar-icon' />Bench Strength
+              <GridContainer><GridItem  xs={12} sm={12} md={12}><img src={Call} alt="..." className="photo" /></GridItem></GridContainer>
+            
+          
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -199,7 +207,8 @@ function HeaderLinks() {
                         />
                       </GridItem>
                       <GridItem xs={12} sm={12} md={4}>
-                        <Button type="submit" variant="contained" color="primary">Send Message</Button>
+                        <Button type="submit" variant="contained" color="primary" onClick={notify}>Send Message</Button>
+                        <ToastContainer />
                         {/* <input type="submit" value="send"/> */}
                       </GridItem>
                     </GridContainer>
@@ -215,6 +224,7 @@ function HeaderLinks() {
           </div>
         </nav>
       </IconContext.Provider>
+      
     </>
   );
 }

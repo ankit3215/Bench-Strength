@@ -1,0 +1,10 @@
+.photo{
+    height: 75px;
+    width: 150px;
+}
+
+@media screen and (max-width: 960px) {
+    .photo{
+       height: 50px;
+    }
+}

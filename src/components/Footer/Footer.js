@@ -26,14 +26,14 @@ function Footer() {
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>About Us</h2>
+            <h3 style={{color:"white"}}>About Us</h3>
             <Link spy={true} smooth={true} to='why'>Why Choose Us</Link>
             <Link spy={true} smooth={true} to='testimonials'>Testimonials</Link>
             <Link spy={true} smooth={true} to='faq'>FAQs</Link>
       
           </div>
           <div className='footer-link-items'>
-            <h2>Bench Strength</h2>
+            <h3 style={{color:"white"}}>Our Way</h3>
             <Link spy={true} smooth={true} to='hiringsection'>Hire Developers according to your Choice</Link>
             <Link spy={true} smooth={true} to='team'>Teams</Link>
            
@@ -41,13 +41,13 @@ function Footer() {
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>Services</h2>
+            <h3 style={{color:"white"}}>Services</h3>
             <Link spy={true} smooth={true} to='services'>Our Services</Link>
             <Link spy={true} smooth={true} to='hiringprocess'>Hiring Process</Link>
             
           </div>
           <div className='footer-link-items'>
-            <h2>Address</h2>
+            <h3 style={{color:"white"}}>Address</h3>
             <Link to='/'>Unit No. 650, 6th Floor,</Link>
             <Link to='/'>Tower A, Spaze iTechPark,</Link>
             <Link to='/'>Sector-49, Sohna Road,</Link>

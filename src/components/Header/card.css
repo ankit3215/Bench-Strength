@@ -1,0 +1,12 @@
+.card{
+    background: #512da8;
+    background: url("../../assets/img/contactsss.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.test1{
+    color: orange;
+}
+

@@ -1,0 +1,12 @@
+.head-text {
+    position: relative;
+ }
+ .text-on-image {
+     color: aliceblue;
+     position: absolute;
+     top: 15%;
+     bottom: 10%;
+     left: 3%;
+     right: 3%;
+ }
+ 

@@ -1,7 +1,7 @@
 
-            Fonts used: AbrilFatface-Regular 
+            Fonts used: JosefinSlab,AbrilFatface-Regular 
 
-            Colors used: 14274E,ECE7E2  
+            Colors used: C9ACA9,F1EFE4  
 
             Icon url: https://thenounproject.com/term/business/693485  
         
